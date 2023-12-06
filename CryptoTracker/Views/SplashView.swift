@@ -4,21 +4,9 @@ import UIKit
 
 class SplashView: UIView {
     
-    private let cryptoImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "cryptoIcon")
-        image.contentMode = .scaleAspectFit
-        return image
-    }()
-    private var textLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "CriptoTracker"
-        label.textColor = UIColor(named: "mainColor")
-        label.font = .systemFont(ofSize: 30, weight: .bold)
-        return label
-    }()
+    private let cryptoImageView = ImageDefault(imageName: "cryptoIcon", contentMode: .scaleAspectFit)
+    
+    private var textLabel = LabelDefault(text: "CriptoTracker", font: .systemFont(ofSize: 30, weight: .bold), textColor: UIColor(named: "mainColor") ?? .orange)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
