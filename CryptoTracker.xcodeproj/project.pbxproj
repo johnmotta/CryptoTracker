@@ -14,6 +14,11 @@
 		D2FA56A42B20953300F36CF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FA56A22B20953300F36CF3 /* LaunchScreen.storyboard */; };
 		D2FA56AC2B20AF9500F36CF3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56AB2B20AF9500F36CF3 /* MainViewController.swift */; };
 		D2FA56B02B20B0E100F36CF3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56AF2B20B0E100F36CF3 /* SplashView.swift */; };
+		D2FA56B22B20D63900F36CF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56B12B20D63900F36CF3 /* MainView.swift */; };
+		D2FA56B52B20D6E900F36CF3 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56B42B20D6E900F36CF3 /* LabelDefault.swift */; };
+		D2FA56B92B20D70700F36CF3 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56B82B20D70700F36CF3 /* TextFieldDefault.swift */; };
+		D2FA56BB2B20D70F00F36CF3 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56BA2B20D70F00F36CF3 /* ButtonDefault.swift */; };
+		D2FA56BD2B20D97300F36CF3 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA56BC2B20D97300F36CF3 /* ImageDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		D2FA56A52B20953300F36CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2FA56AB2B20AF9500F36CF3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2FA56AF2B20B0E100F36CF3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D2FA56B12B20D63900F36CF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D2FA56B42B20D6E900F36CF3 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		D2FA56B82B20D70700F36CF3 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		D2FA56BA2B20D70F00F36CF3 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		D2FA56BC2B20D97300F36CF3 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		D2FA56962B20953100F36CF3 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D2FA56B32B20D6DA00F36CF3 /* Components */,
 				D2FA56AE2B20B0DA00F36CF3 /* Views */,
 				D2FA56AD2B20B0D100F36CF3 /* Controllers */,
 				D2FA56972B20953100F36CF3 /* AppDelegate.swift */,
@@ -82,8 +93,20 @@
 			isa = PBXGroup;
 			children = (
 				D2FA56AF2B20B0E100F36CF3 /* SplashView.swift */,
+				D2FA56B12B20D63900F36CF3 /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D2FA56B32B20D6DA00F36CF3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D2FA56B42B20D6E900F36CF3 /* LabelDefault.swift */,
+				D2FA56B82B20D70700F36CF3 /* TextFieldDefault.swift */,
+				D2FA56BA2B20D70F00F36CF3 /* ButtonDefault.swift */,
+				D2FA56BC2B20D97300F36CF3 /* ImageDefault.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +180,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FA569C2B20953100F36CF3 /* SplashViewController.swift in Sources */,
+				D2FA56BD2B20D97300F36CF3 /* ImageDefault.swift in Sources */,
+				D2FA56BB2B20D70F00F36CF3 /* ButtonDefault.swift in Sources */,
+				D2FA56B22B20D63900F36CF3 /* MainView.swift in Sources */,
 				D2FA56982B20953100F36CF3 /* AppDelegate.swift in Sources */,
 				D2FA56B02B20B0E100F36CF3 /* SplashView.swift in Sources */,
 				D2FA569A2B20953100F36CF3 /* SceneDelegate.swift in Sources */,
 				D2FA56AC2B20AF9500F36CF3 /* MainViewController.swift in Sources */,
+				D2FA56B52B20D6E900F36CF3 /* LabelDefault.swift in Sources */,
+				D2FA56B92B20D70700F36CF3 /* TextFieldDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
