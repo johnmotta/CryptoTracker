@@ -10,6 +10,15 @@ class LabelDefault: UILabel {
         self.initDefault(text, font, textColor)
     }
     
+    init(text: String, font: UIFont, textColor: UIColor, numberOfLines: Int, textAlignment: NSTextAlignment) {
+        super.init(frame: .zero)
+        
+        self.numberOfLines = numberOfLines
+        self.textAlignment = textAlignment
+
+        self.initDefault(text, font, textColor)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
