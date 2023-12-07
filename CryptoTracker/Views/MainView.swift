@@ -171,6 +171,6 @@ class MainView: UIView {
     }
     
     @objc private func didTapToLogin() {
-        onContinueButtonTapped?()
+        self.onContinueButtonTapped?()
     }
 }

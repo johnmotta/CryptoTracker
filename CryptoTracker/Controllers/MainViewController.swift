@@ -4,15 +4,19 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    var rootViewController = UINavigationController()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "mainColor")
-        setupView()
-    }
+    var onLoginTap: (() -> Void)?
     
-    private func setupView() {
-        let screen = MainView()
-        view = screen
+    lazy var mainView: MainView = {
+        let vc = MainView()
+        vc.onContinueButtonTapped = { [weak self] in
+            self?.onLoginTap?()
+        }
+        return vc
+    }()
+    
+    override func loadView() {
+        self.view = mainView
     }
 }
