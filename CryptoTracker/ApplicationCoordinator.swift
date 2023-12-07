@@ -11,6 +11,9 @@ class ApplicationCoordinator: Coordinator {
     }
     
     func start() {
-        window.rootViewController = UINavigationController(rootViewController: SplashViewController())
+        let splashCoordinator = SplashCoordinator()
+        splashCoordinator.start()
+        
+        window.rootViewController = splashCoordinator.rootViewController
     }
 }
